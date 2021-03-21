@@ -13,6 +13,6 @@
     @yield('atimtis')
     @yield('dalyba')
     @yield('daugyba')
-    <img src="img/matrix.jpg" alt="matrica"/>
+    <img src="/img/matrix.jpg" alt="matrica"/>
 </body>
 </html>
