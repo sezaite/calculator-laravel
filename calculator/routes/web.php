@@ -1,14 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LayoutController;
 use App\Http\Controllers\SudetisController;
 use App\Http\Controllers\AtimtisController;
 use App\Http\Controllers\DaugybaController;
 use App\Http\Controllers\DalybaController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [LayoutController::class, 'index']);
 
 Route::get('/sudetis/{a}/{b}', [SudetisController::class, 'index']);
 
