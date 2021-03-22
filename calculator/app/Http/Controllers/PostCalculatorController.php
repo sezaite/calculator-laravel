@@ -7,18 +7,22 @@ use Session;
 
 class PostCalculatorController extends Controller
 {
-    public function show(){
-        $rez = Session::get('sum', 'not found');// jei sesiojoje nera sum, tada defaultas - not fond
+    public function show()
+    {
+        $rez = Session::get('sum', 'not found');
+        error_log($rez);
         Session::put('sum', null);
-        return view('pc.show', ['r' => $rez]);
         
+        return view('pc.show', ['r' => $rez]);
     }
 
-    public function calc(Request $request){
+
+    public function calc(Request $request)
+    {
         $sum = $request->x + $request->y;
         Session::put('sum', $sum);
+
         return redirect()->back();
     }
-
 
 }

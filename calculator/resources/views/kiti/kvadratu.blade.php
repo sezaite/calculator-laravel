@@ -8,6 +8,6 @@
 X: <input type="text" name="x">
 <button type="submit">Pakelk</button>
 @csrf 
-{{-- ^apsaugo nuo nesamoningu neteisingu formu --}}
+
 </form>
 @endsection
