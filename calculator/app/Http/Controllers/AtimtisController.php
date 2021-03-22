@@ -10,3 +10,4 @@ class AtimtisController extends Controller
         return view('calculator.atimtis', ['pirmas' => $a, 'antras' => $b]);
     }
 }
+//cia geriau parasyti atimti ir pasiusti kintamuosius, o ne bleide atimti
